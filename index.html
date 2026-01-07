@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://angelcla04-netizen.github.io/Payment-Barcode-%2D-Tangkarunika-Blaze/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tangkarunika's Cashier</title>
+  <link rel="stylesheet" href="./IL.css">
+  <!-- QuaggaJS CDN for barcode scanning -->
+  <script src="./quagga.min.js"></script>
+</head>
+<body>
+  <header class="il-header">
+    <div class="brand">
+      <div class="bubble"></div>
+      <h1 class="hehe">Tangkarunika's Cashier</h1>
+    </div>
+    <p class="tagline">Tangkarunika's making it looks easy!</p>
+  </header>
+
+  <main class="container">
+    <!-- Scanner & manual barcode -->
+    <section class="panel">
+      <h2>Scan or enter the barcode!</h2>
+      <div id="camera" class="camera"></div>
+      <div class="controls">
+        <input type="text" id="barcodeInput" placeholder="Enter barcode manually">
+        <button id="addBtn">Add</button>
+        <button id="toggleScannerBtn">Start scanner</button>
+      </div>
+      <p class="hint">Tip: Use your phone and allow camera permissions.</p>
+    </section>
+
+    <!-- Cart -->
+    <section class="panel">
+      <h2>Cart</h2>
+      <div class="cart-wrap">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="cartBody"></tbody>
+        </table>
+      </div>
+      <div class="totals">
+        <p><strong>Total:</strong> <span id="totalDisplay">Rp 0</span></p>
+      </div>
+      <div class="actions-row">
+        <button id="clearCartBtn" class="secondary">Clear cart</button>
+      </div>
+    </section>
+
+    <!-- Payment -->
+    <section class="panel">
+      <h2>Payment</h2>
+      <div class="payment-row">
+        <input type="number" id="cashInput" placeholder="Enter cash (Rp)">
+        <button id="payBtn">Pay</button>
+      </div>
+      <div class="change-row">
+        <p><strong>Cash given:</strong> <span id="cashGivenDisplay">Rp 0</span></p>
+        <p><strong>Change:</strong> <span id="changeDisplay">Rp 0</span></p>
+        <p id="paymentWarning" class="warning"></p>
+      </div>
+    </section>
+
+    <!-- Receipt -->
+    <section class="panel">
+      <h2>Receipt</h2>
+      <div id="receipt" class="receipt"></div>
+      <div class="actions-row">
+        <button id="completeSaleBtn">Complete sale</button>
+        <button id="exportCsvBtn" class="secondary">Export receipt to CSV</button>
+      </div>
+      <p class="hint">CSV opens easily in Excel and Google Sheets!</p>
+    </section>
+
+    <!-- History -->
+    <section class="panel">
+      <h2>Receipt History (on this device)</h2>
+      <div id="historyList" class="history"><p>No receipts yet.</p></div>
+      <div class="actions-row">
+        <button id="clearHistoryBtn" class="secondary">Clear history</button>
+      </div>
+      <p class="hint">Each person’s device keeps their own history.</p>
+    </section>
+  </main>
+
+  <footer class="il-footer">
+    <p class="hehe">Made with care by the Tangkarunika Blaze Team!</p>
+  </footer>
+  <script src="./IL.js"></script>
+
+<div id="give-freely-root-ejkiikneibegknkgimmihdpcbcedgmpo" class="give-freely-root" data-extension-id="ejkiikneibegknkgimmihdpcbcedgmpo" data-extension-name="Volume Booster" style="display: block;"><template shadowrootmode="open"><style>
+  :host {
+    all: initial;
+  }
+
+  .gf-scroll-remove::-webkit-scrollbar {
+    border-radius-bottom-right: 15px;
+  }
+
+  button {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .give-freely-close-button:hover {
+    opacity: 0.7;
+  }
+
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 1em 0;
+  }
+
+  @media (max-width: 600px), (max-height: 480px) {
+    #give-freely-checkout-popup {
+      display: none !important;
+    }
+  }
+</style><div><div class="gf-app"></div></div></template></div></body></html>
